@@ -14,7 +14,7 @@ function populateDB(tx) {
 	tx.executeSql('DROP TABLE IF EXISTS EMPLOYEE');
 	
 	tx.executeSql('CREATE TABLE IF NOT EXISTS EMPLOYEE (id unique, pName,pDesc,pPrice,pImage)');
-	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (0, "iBall Rocky Clarity Headsets","1 Year Manufacturer warranty","$12.21","prd_img1.png")');
+	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (0, "iBall Rocky Clarity Headsets","1 Year Manufacturer warranty","$12.21","prd_img2.png")');
 	
 	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (1, "Sandisk USB Pendrive","32GB Slider","$ 15.30","prd_det.png")');
 	
