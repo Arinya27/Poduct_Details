@@ -14,7 +14,7 @@ function populateDB(tx) {
 	tx.executeSql('DROP TABLE IF EXISTS EMPLOYEE');
 	
 	tx.executeSql('CREATE TABLE IF NOT EXISTS EMPLOYEE (id unique, pName,pDesc,pPrice,pImage)');
-	
+	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (0, "iBall Rocky Clarity Headsets","1 Year Manufacturer warranty","$12.21","prd_img1.png")');
 	
 	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (1, "Sandisk USB Pendrive","32GB Slider","$ 15.30","prd_det.png")');
 	
@@ -89,11 +89,11 @@ function querySuccess(tx, results) {
 			if	(i == 0)
 
 			{
-tblDesign = tblDesign+"<div id = \"product\"><a href=\"proddet1.html?"+results.rows.item(i).id+"\""+" STYLE=\"TEXT-DECORATION: NONE\" data-transition=\"flip\"><div class=\"row-list2\"><div class=\"row-image\"><IMG SRC=\""+results.rows.item(i).pImage+"\"></div><h5 class=\"label1\">"+results.rows.item(i).pName+"</h5><h5 class=\"label2\">"+results.rows.item(i).pDesc+"</h5><h5 class=\"label3\">Price: <h5 class=\"price\">"+results.rows.item(i).pPrice+"</h5></h5><div class=\"arrow-list\" ></div></div></a></div>";				
+tblDesign = tblDesign+"<div id = \"product\"><a href=\"details.html?"+results.rows.item(i).id+"\""+" STYLE=\"TEXT-DECORATION: NONE\" data-transition=\"flip\"><div class=\"row-list2\"><div class=\"row-image\"><IMG SRC=\""+results.rows.item(i).pImage+"\"></div><h5 class=\"label1\">"+results.rows.item(i).pName+"</h5><h5 class=\"label2\">"+results.rows.item(i).pDesc+"</h5><h5 class=\"label3\">Price: <h5 class=\"price\">"+results.rows.item(i).pPrice+"</h5></h5><div class=\"arrow-list\" ></div></div></a></div>";				
 			}
 			else
 			{
-				tblDesign = tblDesign+"<a href=\"proddet2.html?"+results.rows.item(i).id+"\""+" STYLE=\"TEXT-DECORATION: NONE\" data-transition=\"flip\"><div class=\"row-list\"><div class=\"row-image\"><IMG SRC=\""+results.rows.item(i).pImage+"\"></div><h5 class=\"label1\">"+results.rows.item(i).pName+"</h5><h5 class=\"label2\">"+results.rows.item(i).pDesc+"</h5><h5 class=\"label3\">Price: <h5 class=\"price\">"+results.rows.item(i).pPrice+"</h5> </h5><div class=\"arrow-list\"></div></div></a>";
+				tblDesign = tblDesign+"<div id = \"product\"><a href=\"details.html?"+results.rows.item(i).id+"\""+" STYLE=\"TEXT-DECORATION: NONE\" data-transition=\"flip\"><div class=\"row-list2\"><div class=\"row-image\"><IMG SRC=\""+results.rows.item(i).pImage+"\"></div><h5 class=\"label1\">"+results.rows.item(i).pName+"</h5><h5 class=\"label2\">"+results.rows.item(i).pDesc+"</h5><h5 class=\"label3\">Price: <h5 class=\"price\">"+results.rows.item(i).pPrice+"</h5></h5><div class=\"arrow-list\"></div></div></a></div>";
 			}
 			
 		}
@@ -101,7 +101,7 @@ tblDesign = tblDesign+"<div id = \"product\"><a href=\"proddet1.html?"+results.r
 			if	(i == 3)
 
 			{
-				tblDesign = tblDesign+"<div id = \"product\"><a href=\"proddet.html?"+results.rows.item(i).id+"\""+" STYLE=\"TEXT-DECORATION: NONE\" data-transition=\"flip\"><div class=\"row-list2\"><div class=\"row-image\"><IMG SRC=\""+results.rows.item(i).pImage+"\"></div><h5 class=\"label1\">"+results.rows.item(i).pName+"</h5><h5 class=\"label2\">"+results.rows.item(i).pDesc+"</h5><h5 class=\"label3\">Price: <h5 class=\"price\">"+results.rows.item(i).pPrice+"</h5></h5><div class=\"arrow-list\"></div></div></a></div>";
+				tblDesign = tblDesign+"<div id = \"product\"><a href=\"details.html?"+results.rows.item(i).id+"\""+" STYLE=\"TEXT-DECORATION: NONE\" data-transition=\"flip\"><div class=\"row-list2\"><div class=\"row-image\"><IMG SRC=\""+results.rows.item(i).pImage+"\"></div><h5 class=\"label1\">"+results.rows.item(i).pName+"</h5><h5 class=\"label2\">"+results.rows.item(i).pDesc+"</h5><h5 class=\"label3\">Price: <h5 class=\"price\">"+results.rows.item(i).pPrice+"</h5></h5><div class=\"arrow-list\"></div></div></a></div>";
 				
 			}
 	else
