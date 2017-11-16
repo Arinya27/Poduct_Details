@@ -15,13 +15,13 @@ function populateDB(tx) {
 	
 	tx.executeSql('CREATE TABLE IF NOT EXISTS EMPLOYEE (id unique, pName,pDesc,pPrice,pImage)');
 	
-	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (0, "iBall Rocky Clarity Headsets","1 Year Manufacturer warranty","$12.21","prd_img1.png")');
+	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (1, "iBall Rocky Clarity Headsets","1 Year Manufacturer warranty","$12.21","prd_img1.png")');
 	
-	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (1, "Sandisk USB Pendrive","32GB Slider","$ 15.30","prd_img2.png")');
+	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (2, "Sandisk USB Pendrive","32GB Slider","$ 15.30","prd_img2.png")');
 	
-	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (2, "Enter USB 2.0 Speaker","6 Months Vendor Warranty","$20.00","prd_img3.png")');
+	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (3, "Enter USB 2.0 Speaker","6 Months Vendor Warranty","$20.00","prd_img3.png")');
 	
-	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (3, "Dp Branded 31 LED","Flexible Rechargable Table Lamp","$15.00","prd_img4.png")');
+	tx.executeSql('INSERT INTO EMPLOYEE (id, pName,pDesc,pPrice,pImage) VALUES (4, "Dp Branded 31 LED","Flexible Rechargable Table Lamp","$15.00","prd_img4.png")');
 
 }
 
