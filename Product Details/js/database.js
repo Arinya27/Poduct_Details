@@ -90,7 +90,7 @@ function querySuccess(tx, results) {
 			if	(i == 0)
 
 			{
-				tblDesign = tblDesign+"<div id = \"product\"><a href=\"proddet2.html?"+results.rows.item(i).id+"\""+" STYLE=\"TEXT-DECORATION: NONE\" data-transition=\"flip\"><div class=\"row-list2\"><div class=\"row-image\"><IMG SRC=\""+results.rows.item(i).pImage+"\"></div><h5 class=\"label1\">"+results.rows.item(i).pName+"</h5><h5 class=\"label2\">"+results.rows.item(i).pDesc+"</h5><h5 class=\"label3\">Price: <h5 class=\"price\">"+results.rows.item(i).pPrice+"</h5></h5><div class=\"arrow-list\" ></div></div></a></div>";
+				tblDesign = tblDesign+"<div id = \"product\"><a href=\"proddet1.html?"+results.rows.item(i).id+"\""+" STYLE=\"TEXT-DECORATION: NONE\" data-transition=\"flip\"><div class=\"row-list2\"><div class=\"row-image\"><IMG SRC=\""+results.rows.item(i).pImage+"\"></div><h5 class=\"label1\">"+results.rows.item(i).pName+"</h5><h5 class=\"label2\">"+results.rows.item(i).pDesc+"</h5><h5 class=\"label3\">Price: <h5 class=\"price\">"+results.rows.item(i).pPrice+"</h5></h5><div class=\"arrow-list\" ></div></div></a></div>";
 				
 			}
 			else
